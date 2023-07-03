@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>panorama</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.cjmall.css">
-  <link rel="stylesheet" href="css/evt.css">
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <link rel="stylesheet" href="css/test.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- <div class="header">
@@ -26,15 +23,15 @@
       <div class="img_wrap">
         <img src="img/img01.png" alt="">
       </div>
-      <script>
+      <!-- <script>
         var $img = $('.test01 img'),
             imgW = $img.width();
-        $('.test01 .img_wrap').scrollLeft(imgW/6);
-      </script>
+        $('.test01 .img_wrap').scrollLeft(imgW/2);
+      </script> -->
     </div>
     <!--// test01 -->
-    <!-- test03 -->
-    <div class="evt_section test03">
+    <!-- test02 -->
+    <div class="evt_section test02">
     <strong>swiper</strong>
     <link rel="stylesheet" href="css/test3.css">
     <div class="evt_section swiper-container">
@@ -46,19 +43,21 @@
         </div>
       </div>
     </div>
+    <style>
+
+    </style>
     <script>
       var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        resistance : true,
-        resistanceRatio : 0,
-        // centeredSlides: true
+        // slidesPerView: 'auto',
+        // freeMode: true,
+        // resistance : true,
+        // resistanceRatio : 0,
+        centeredSlides: true
       });
     </script>
   </div>
-  <!--// test03 -->
+  <!--// test02 -->
   <!-- test05 -->
-  <link rel="stylesheet" href="css/test5.css">
   <script type="text/javascript" src="js/test6.js"></script>
   <div class="evt_section test05">
     <strong>custom</strong>
@@ -74,7 +73,7 @@
     $(document).ready(function(){
       $(".panorama").panorama_viewer({
         repeat: true,
-        // autoPlay: true
+        autoPlay: true
       });
     });
   </script>
